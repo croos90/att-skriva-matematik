@@ -5,22 +5,16 @@
 \usepackage{hyperref}
 \usepackage{amsmath, amssymb, mathtools}
 \usepackage{enumitem}
+\usepackage{blindtext}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+
+% \definecolor{green}{cmyk}{0.37, 0, 0.94, 0.21, 0.20}
+
 \bibliographystyle{plainurl}
 
-
-\newcommand{\Title}{Att skriva matematik}
-\newcommand{\Subtitle}{Förberedande kurs i matematik}
-\newcommand{\Author}{Caroline Roos}
-\newcommand{\Date}{2023}
-\newcommand{\Inst}{Matematiska Institutionen, Stockholms Universitet, 2023}
-
-
-\newtheorem{example}{Exempel}
-
-
-
 \title{Att skriva matematik \\ \normalsize Förberedande Kurs i matematik}
-\author{Caroline Roos}
+\author{}
 \date{}
 
 
@@ -104,18 +98,6 @@ Något som kan vara svårt i början är att hitta balansen i att kombinera siff
 \end{itemize}
 
 
-%% Övningar
-
-\subsection{Övningar}
-
-Skriv om följande meningar, så att de följer tumreglerna för hur man skriver matematisk text:
-\begin{enumerate}
-    \item $x$ är negativ $\therefore \sqrt{x}$ är ett komplext tal.
-    \item $x^2 = 4 \Rightarrow x=2 \vee x=-2$.
-    \item $a$ är $>0$.
-    \item Om $x>0$ $g(x) \neq 0$.
-    \item $\sin(\pi x)= 0\Rightarrow x$ är ett heltal. 
-\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -148,9 +130,9 @@ Notationen $x:y$ är inte särskilt vanlig, och kan betyda olika saker i olika s
 \subsection{Mängder och intervall}
 
 Ett intervall är en delmängd av de rella talen av typen
-$$[a,b] := \{x \in \mathbb{R}\: |\: a\leq x \leq b\}$$
+$$[a,b] := \{x \in \mathbb{R}\: : \: a\leq x \leq b\}$$
 där $a,b$ är rella tal och $a<b$. Det här är ett slutet intervall, vilket innebär att det innehåller ändpunkterna. Vi kan också definiera öppna intervall 
-$$(a,b) := \{x \in \mathbb{R} \: | \: a<x<b\}$$
+$$(a,b) := \{x \in \mathbb{R} \: : \: a<x<b\}$$
 och halvöppna intervall
 $$[a,b) \hspace{10mm} (a,b].$$
 
@@ -159,7 +141,7 @@ $$]a,b[ \hspace{10mm} [a,b[ \hspace{10mm} ]a,b],$$
 men så länge det framgår tydligt från kontexten att det är ett intervall vi syftar på så fungerar båda notationerna lika bra.
 
 Ibland vill vi uttrycka intervall som sträcker sig oändligt långt, till exempel om vi vill ange värdemängden till funktionen $f(x) = x^2$ som bekant är alla icke-negativa reella tal. Vi kan uttrycka värdemängden med mängdnotation
-$$\{ a \: | \: 0 \leq a < \infty \},$$
+$$\{ a \: : \: 0 \leq a < \infty \},$$
 eller med notationen för intervall
 $$[0, \infty[.$$
 
@@ -195,7 +177,7 @@ Det finns inget formellt krav på att använda \LaTeX$ $ i kursen, men det är s
 
 Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi vanligtvis använder med \LaTeX-kod, dessa är vanligtvis svåra att uttrycka i ett vanligt ordbehandlingsprogram. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas i \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
 
-\begin{table}
+\begin{table}[h]
     \begin{center}
         \begin{tabular}{| c | l |}
             \hline 
@@ -229,7 +211,7 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
     \end{center}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
     \begin{center}
         \begin{tabular}{| l | l |}
             \hline
@@ -255,7 +237,7 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
     \end{center}
 \end{table}
 
-\begin{table}
+\begin{table}[h]
     \begin{center}
         \begin{tabular}{| l | l |}
             \hline
@@ -291,6 +273,226 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 \section{Exempel}
 
 
+
+% \begin{center}
+%     \noindent\fbox{
+%         \parbox{0.8\textwidth}{
+%             \textbf{Problem: }Motivera att $(a^m)^n = a^{mn}$.
+%         }
+%     }
+%     \end{center}
+    
+%     \begin{center}
+%         \noindent\fbox{
+%             \parbox{0.8\textwidth}{
+%                 \textbf{Mindre bra lösning:}
+    
+%                 Vi kan motivera detta genom att visa varför (a\textasciicircum 2)\textasciicircum 3=a\textasciicircum 6:
+%                 (a\textasciicircum 2)\textasciicircum 3=(a*a)\textasciicircum 3=(a*a)*(a*a)*(a*a)=a*a*a*a*a*a=a\textasciicircum 6.
+%             }
+%         }
+%     \end{center}
+    
+%     \begin{center}
+%         \noindent\fbox{
+%             \parbox{0.8\textwidth}{
+%                 \textbf{Bättre lösning:}
+    
+%                 Vi kan motivera detta genom att visa varför $(a^2)^3 = a^6$: \newline
+%                 $(a^2)^3 = (a \cdot a)^3= (a \cdot a)\cdot (a \cdot a) \cdot (a \cdot a) = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6$.
+%             }
+%         }
+%     \end{center}
+
+
+% \begin{center}
+%     \noindent\fbox{
+%         \parbox{0.8\textwidth}{
+%             \textbf{Problem: }Faktorisera polynomet $p(x)=x^2-5x+6$.
+%         }
+%     }
+% \end{center}
+% \begin{center}
+%     \noindent\fbox{
+%         \parbox{0.8\textwidth}{
+%             \textbf{Mindre bra lösning:}
+
+%             $x^2-5x+6 = 0 => x=5/2 \pm$ rotenur$1/4$
+
+%             Rötterna är $x_1 = 2$, $x_2 = 3$. Det ger faktoriseringen $(x-2)(x-3)$.
+%         }
+%     }
+% \end{center}
+% \begin{center}
+%     \noindent\fbox{
+%         \parbox{0.8\textwidth}{
+%             \textbf{Bättre lösning:}
+
+%             Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att kvadratkomplettera:
+%             \vspace{2mm}
+
+%             $\quad \: x^2-5x+6 = 0$
+
+%             $\Leftrightarrow x^2-5x = -6$
+
+%             $\Leftrightarrow(x-\frac{5}{2})^2 = \frac{1}{4}$
+%             \vspace{2mm}
+
+%             Nu drar vi roten ur båda led:
+%             \vspace{2mm}
+
+%             $\quad \: x-\frac{5}{2} = \pm \sqrt{\frac{1}{4}}$
+
+%             $\Leftrightarrow x = \frac{5}{2} \pm \frac{1}{2}$
+%             \vspace{2mm}
+
+%             Detta ger oss lösningarna $x_1 = 2$ och $x_2=3$.
+
+%             Enligt faktorsatsen är $(x-a)$ en faktor till polynomet $p(x)$ om och endast om $x = a$ är en rot till $p(x)$. Det följer av satsen, och att ett andragradspolynom inte kan ha fler än två rötter, att $p(x) = (x-2)(x-3)$.
+%         }
+%     }
+% \end{center}
+
+% \begin{center}
+%     \noindent\fbox{
+%         \parbox{0.8\textwidth}{
+
+%         }
+%     }
+% \end{center}
+
+
+
+% \begin{center}
+% \begin{tcolorbox}[width=\linewidth,colback={red!30!white},title={\textbf{Mindre bra lösning}},outer arc=0mm,colupper=black]
+
+% \end{tcolorbox} 
+% \end{center}
+
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 1}},outer arc=0mm,colupper=black]
+    Motivera att $(a^m)^n = a^{mn}$.
+\end{tcolorbox} 
+\end{center}
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 1: Lösning - Sämre}},outer arc=0mm,colupper=black]
+    Vi kan motivera detta genom att visa varför (a\textasciicircum 2)\textasciicircum 3=a\textasciicircum 6:
+    (a\textasciicircum 2)\textasciicircum 3=(a*a)\textasciicircum 3=(a*a)*(a*a)*(a*a)=a*a*a*a*a*a=a\textasciicircum 6.
+\end{tcolorbox} 
+\end{center}
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 1: Lösning - Bättre}},outer arc=0mm,colupper=black]
+    Vi kan motivera detta genom att visa varför $(a^2)^3 = a^6$: \newline
+    $(a^2)^3 = (a \cdot a)^3= (a \cdot a)\cdot (a \cdot a) \cdot (a \cdot a) = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6$.
+\end{tcolorbox} 
+\end{center}
+
+
+
+
+
+
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 2}},outer arc=0mm,colupper=black]
+    Faktorisera polynomet $p(x)=x^2-5x+6$.
+\end{tcolorbox} 
+\end{center}
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 2: Lösning - Sämre}},outer arc=0mm,colupper=black]
+    $x^2-5x+6 = 0 => x=5/2 \pm$ rotenur$1/4$
+
+    Rötterna är $x_1 = 2$, $x_2 = 3$. Det ger faktoriseringen $(x-2)(x-3)$.
+\end{tcolorbox} 
+\end{center}
+
+
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 2: Lösning - Bättre}},outer arc=0mm,colupper=black]    
+    Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att kvadratkomplettera:
+    \vspace{2mm}
+
+    $\quad \: x^2-5x+6 = 0$
+
+    $\Leftrightarrow x^2-5x = -6$
+
+    $\Leftrightarrow(x-\frac{5}{2})^2 = \frac{1}{4}$
+    \vspace{2mm}
+
+    Nu drar vi roten ur båda led:
+    \vspace{2mm}
+
+    $\quad \: x-\frac{5}{2} = \pm \sqrt{\frac{1}{4}}$
+
+    $\Leftrightarrow x = \frac{5}{2} \pm \frac{1}{2}$
+    \vspace{2mm}
+
+    Detta ger oss lösningarna $x_1 = 2$ och $x_2=3$.
+
+    Enligt faktorsatsen är $(x-a)$ en faktor till polynomet $p(x)$ om och endast om $x = a$ är en rot till $p(x)$. Det följer av satsen, och att ett andragradspolynom inte kan ha fler än två rötter, att $p(x) = (x-2)(x-3)$.
+\end{tcolorbox} 
+\end{center}
+
+
+
+
+
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 3}},outer arc=0mm,colupper=black]
+
+\end{tcolorbox} 
+\end{center}
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 3: Lösning - Sämre}},outer arc=0mm,colupper=black]
+
+\end{tcolorbox} 
+\end{center}
+
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 3: Lösning - Bättre}},outer arc=0mm,colupper=black]
+
+\end{tcolorbox} 
+\end{center}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%
+%%  Övningar  %%
+%%%%%%%%%%%%%%%%
+
+\section{Övningar}
+\begin{enumerate}
+    \item Skriv om följande meningar så att de följer tumreglerna för hur man skriver matematisk text:
+    \begin{enumerate}[label=(\alph*)]
+        \item $x$ är negativ $\therefore \sqrt{x}$ är ett komplext tal.
+        \item $x^2 = 4 \Rightarrow x=2 \vee x=-2$.
+        \item $a$ är $>0$.
+        \item Om $x>0$ $g(x) \neq 0$.
+        \item $\sin(\pi x)= 0\Rightarrow x$ är ett heltal. 
+    \end{enumerate}
+    \item Beskriv följande mängder med ord:
+    \begin{enumerate}
+        \item $\{x \in \mathbb{Q} \: : \: 0<x<1\}$
+        \item $\{x \in \mathbb{Z} \: : \: 0 < x \wedge 2 \mid x\}$
+    \end{enumerate}
+    \item Förklara utan att använda några matematiska symboler:
+    \begin{enumerate}[label=(\alph*)]
+        \item Hur dividerar man två bråk med varandra?
+        \item Hur utför man kvadratkomplettering?
+        \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är ett primtal?
+        \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är summan av två kvadrater?
+    \end{enumerate}
+\end{enumerate}
 
 
 % References
