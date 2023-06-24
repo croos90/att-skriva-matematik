@@ -147,6 +147,23 @@ Notationen $x:y$ är inte särskilt vanlig, och kan betyda olika saker i olika s
 
 \subsection{Mängder och intervall}
 
+Ett intervall är en delmängd av de rella talen av typen
+$$[a,b] := \{x \in \mathbb{R}\: |\: a\leq x \leq b\}$$
+där $a,b$ är rella tal och $a<b$. Det här är ett slutet intervall, vilket innebär att det innehåller ändpunkterna. Vi kan också definiera öppna intervall 
+$$(a,b) := \{x \in \mathbb{R} \: | \: a<x<b\}$$
+och halvöppna intervall
+$$[a,b) \hspace{10mm} (a,b].$$
+
+Notationen för det öppna intervallet krockar med notationen för ett ordnat par $(a,b) \in \mathbb{R}^2$ som man brukar använda för att till exempel uttrycka en punkt i ett koordinatsystem. Det finns alternativa sätt att uttrycka öppna och halvöppna intervall på
+$$]a,b[ \hspace{10mm} [a,b[ \hspace{10mm} ]a,b],$$
+men så länge det framgår tydligt från kontexten att det är ett intervall vi syftar på så fungerar båda notationerna lika bra.
+
+Ibland vill vi uttrycka intervall som sträcker sig oändligt långt, till exempel om vi vill ange värdemängden till funktionen $f(x) = x^2$ som bekant är alla icke-negativa reella tal. Vi kan uttrycka värdemängden med mängdnotation
+$$\{ a \: | \: 0 \leq a < \infty \},$$
+eller med notationen för intervall
+$$[0, \infty[.$$
+
+Notera att vi använt oss av strikt olikhet och öppet intervall här då $\infty$ inte är ett tal och därför inte kan antas av funktionen.
 
 
 
@@ -176,7 +193,7 @@ Notationen $x:y$ är inte särskilt vanlig, och kan betyda olika saker i olika s
 
 Det finns inget formellt krav på att använda \LaTeX$ $ i kursen, men det är starkt rekommenderat. Att skriva \LaTeX-kod är enkelt, du omger bara det matematiska uttrycket med dollartecken. Till exempel renderas \LaTeX-koden \$1+x=5\$ som $1+x=5$. Om du vill att det matematiska uttrycket ska stå skrivet på en egen rad så omger du det istället med dubbla dollartecken, då får vi att \$\$1+x=5\$\$ renderas som $$1+x=5.$$
 
-Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi vanligtvis använder med \LaTeX-kod. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas med hjälp av \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
+Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi vanligtvis använder med \LaTeX-kod, dessa är vanligtvis svåra att uttrycka i ett vanligt ordbehandlingsprogram. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas i \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
 
 \begin{table}
     \begin{center}
@@ -203,6 +220,8 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
             $\geq$ & \$ \textbackslash geq \$ \\
             \hline
             $\neq$ & \$ \textbackslash neq \$ \\
+            \hline
+            $\infty$ & \$ \textbackslash infty \$ \\
             \hline
         \end{tabular}
         \caption{Vanliga symboler i \LaTeX.}
@@ -263,6 +282,13 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
         \label{t3}
     \end{center}
 \end{table}
+
+
+%%%%%%%%%%%%%%%
+%%  Exempel  %%
+%%%%%%%%%%%%%%%
+
+\section{Exempel}
 
 
 
