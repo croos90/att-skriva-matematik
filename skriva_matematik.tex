@@ -1,0 +1,267 @@
+\documentclass[titlepage]{article}
+
+
+\usepackage[swedish]{babel}
+\usepackage{hyperref}
+\usepackage{amsmath, amssymb, mathtools}
+\usepackage{enumitem}
+\bibliographystyle{plainurl}
+
+
+\newcommand{\Title}{Att skriva matematik}
+\newcommand{\Subtitle}{Förberedande kurs i matematik}
+\newcommand{\Author}{Caroline Roos}
+\newcommand{\Date}{2023}
+\newcommand{\Inst}{Matematiska Institutionen, Stockholms Universitet, 2023}
+
+
+\newtheorem{example}{Exempel}
+
+
+
+\title{Att skriva matematik \\ \normalsize Förberedande Kurs i matematik}
+\author{Caroline Roos}
+\date{}
+
+
+
+\begin{document}
+
+%Titelsida
+\begin{titlepage}
+    \maketitle
+\end{titlepage}
+
+% TOC
+\tableofcontents
+\thispagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%
+%%  Inledning  %%
+%%%%%%%%%%%%%%%%%
+
+\newpage
+\setcounter{page}{1}
+
+\section{Inledning}
+
+På universitet och högskolor är kraven på skriftliga presentationer höga, och det är därmed viktigt att lära sig skriva matematisk text. I detta kompendium ger vi dig tips och råd på hur du skriver matematik på ett snyggt och tydligt sätt.
+
+Vi lyfter saker som är extra viktiga att tänka på vid skrivandet, och använder exempel för att tydliggöra skillnaden mellan bra och mindre bra matematisk text. För den som tänker fortsätta läsa matematik och är intresserad av att läsa mer om matematiskt skrivande rekommenderas \textit{Mathematical writing} av Franco Vivaldi\cite{vivaldi}, som står för inspirationen bakom flera punkter i denna text.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Allmänna skrivtips       %%
+%%    - Siffor och symboler  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Allmänna skrivtips}
+
+Börja alltid med att skissa på en lösning på problemet separat innan du börjar skriva själva texten. När du väl har en lösning kan du börja fundera på hur du bäst kan presentera den i text. Det finns många sätt att lösa ett problem på, och ännu fler sätt att presentera lösningar på. Till en början har vi några enkla tumregler att hålla koll på:
+
+\begin{itemize}
+    \item En text ska vara sammanhängande och bestå av fullständiga meningar.
+    \item Formler och matematiska uttryck ska vara del av fullständiga meningar.
+    \item Var noga med att börja varje mening med stor bokstav och avsluta med punkt.
+\end{itemize}
+
+Utöver detta är det såklart viktigt att tänka på stavning och grammatik, precis som när vi skriver vilken annan text som helst.
+
+%% Siffor och symboler
+
+\subsection{Siffror och symboler}
+
+Något som kan vara svårt i början är att hitta balansen i att kombinera siffror, symboler och ord. Det är lockande att ofta använda matematiska symboler, men en överanvändning av dessa kan i själva verket göra din text svårläslig. För att undvika detta inför vi ytterligare några tumregler:
+
+\begin{itemize}
+    \item Börja inte en mening med en siffra eller symbol om det kan undvikas.
+        \begin{itemize}[leftmargin=20mm]
+            \item[\textbf{Sämre:}] $\pi$ är ett rationellt tal.
+            \item[\textbf{Bättre:}] Talet $\pi$ är irrationellt. 
+        \end{itemize}
+    \item En mening innehållandes siffror och symboler måste fortfarande vara en korrekt fullständig mening.
+        \begin{itemize}[leftmargin=20mm]
+            \item[\textbf{Sämre:}] $a < b \: a \neq 0$
+            \item[\textbf{Bättre:}] Vi har att $a<b$ och $a \neq 0$.
+            \vspace{2mm}
+            \item[\textbf{Sämre:}] $x^2 - 7^2 = 0.\: x = \pm 7$
+            \item[\textbf{Bättre:}] Låt $x^2 - 7^2 = 0$, då är $x = \pm 7.$
+        \end{itemize}
+    \item Blanda inte symboler och ord.
+        \begin{itemize}[leftmargin=20mm]
+            \item[\textbf{Sämre:}] Differensen $a-b$ är $<0$.
+            \item[\textbf{Bättre:}] Differensen $a-b$ är negativ.
+        \end{itemize}
+    \item Missbruka inte implikationspilen $\Rightarrow$ eller symbolen $\therefore$ .
+        \begin{itemize}[leftmargin=20mm]
+            \item[\textbf{Sämre:}] $a$ är ett heltal $\Rightarrow a$ är ett rationellt tal.
+            \item[\textbf{Bättre:}] Om $a$ är ett heltal så är $a$ ett rationellt tal.
+            \vspace{2mm}
+            \item[\textbf{Sämre:}] Vi har att $x+5=8 \therefore x = 3$
+            \item[\textbf{Bättre:}]  Vi har att $x+5=8$, då följer det att $x = 3$.
+        \end{itemize}
+\end{itemize}
+
+
+%% Övningar
+
+\subsection{Övningar}
+
+Skriv om följande meningar, så att de följer tumreglerna för hur man skriver matematisk text:
+\begin{enumerate}
+    \item $x$ är negativ $\therefore \sqrt{x}$ är ett komplext tal.
+    \item $x^2 = 4 \Rightarrow x=2 \vee x=-2$.
+    \item $a$ är $>0$.
+    \item Om $x>0$ $g(x) \neq 0$.
+    \item $\sin(\pi x)= 0\Rightarrow x$ är ett heltal. 
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%  Notation       %%
+%%    - Aritmetik  %%
+%%    - Mängder    %%
+%%    - Olikheter  %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Notation}
+
+Var försiktig och noggrann med matematisk notation. Se till att du förstår innebörden hos olika symboler innan du använder dom, till exempel betyder olika parenteser (( ), [ ], \{ \}) och pilar ($\Rightarrow$, $\Leftrightarrow$, $\to$) olika saker. Fel symbol kan göra att det du skriver inte är matematiskt korrekt, och att du skriver någonting annat än det du faktiskt menar.
+
+
+%% Aritmetik
+
+\subsection{Aritmetik}
+
+
+%% Mängder och intervall
+
+\subsection{Mängder och intervall}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%%  Struktur       %%
+%%    - Inledning  %%
+%%    - Huvudtext  %%
+%%    - Slutsats   %%
+%%%%%%%%%%%%%%%%%%%%%
+
+\section{Struktur}
+
+\subsection{Inledning}
+
+\subsection{Huvudtext}
+
+\subsection{Slutsats}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Typsättning i LaTeX  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Typsättning i \LaTeX}
+
+Det finns inget formellt krav på att använda \LaTeX$ $ i kursen, men det är starkt rekommenderat. Att skriva \LaTeX-kod är enkelt, du omger bara det matematiska uttrycket med dollartecken. Till exempel renderas \LaTeX-koden \$1+x=5\$ som $1+x=5$. Om du vill att det matematiska uttrycket ska stå skrivet på en egen rad så omger du det istället med dubbla dollartecken, då får vi att \$\$1+x=5\$\$ renderas som $$1+x=5.$$
+
+Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi vanligtvis använder med \LaTeX-kod. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas med hjälp av \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{| c | l |}
+            \hline 
+            \textbf{Rendering} & \textbf{\LaTeX-kod} \\
+            \hline
+            $\pi$ & \$ \textbackslash pi \$ \\
+            \hline
+            $\sqrt{ x }$ & \$ \textbackslash sqrt\{x\} \$ \\
+            \hline
+            $\equiv$ & \$ \textbackslash equiv \$ \\
+            \hline
+            $\cdot$ & \$ \textbackslash cdot \$ \\
+            \hline
+            $\mathbb{R}$ & \$ \textbackslash mathbb\{R\} \$ \\
+            \hline
+            $\implies$ & \$ \textbackslash implies \$ \\
+            \hline
+            $\pm$ & \$ \textbackslash pm \$ \\
+            \hline
+            $\leq$ & \$ \textbackslash leq \$ \\
+            \hline
+            $\geq$ & \$ \textbackslash geq \$ \\
+            \hline
+            $\neq$ & \$ \textbackslash neq \$ \\
+            \hline
+        \end{tabular}
+        \caption{Vanliga symboler i \LaTeX.}
+        \label{t1}
+    \end{center}
+\end{table}
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{| l | l |}
+            \hline
+            \textbf{Rendering} & \textbf{\LaTeX-kod} \\
+            \hline
+            $a+b$ & \$ a+b \$ \\
+            \hline
+            $a-b$ & \$ a-b \$ \\
+            \hline
+            $a \cdot b$ & \$ a \textbackslash cdot b \$ \\
+            \hline
+            $\frac{a}{b}$ & \$ \textbackslash frac\{a\}\{b\} \$ \\
+            \hline
+            $a^b$ & \$ a\textasciicircum b \$ \\
+            \hline
+            $f(x)$ & \$ f(x) \$ \\
+            \hline
+            $\sin(v)$ & \$ \textbackslash sin(v) \$ \\
+            \hline
+        \end{tabular}
+        \caption{Vanliga uttryck i \LaTeX.}
+        \label{t2}
+    \end{center}
+\end{table}
+
+\begin{table}
+    \begin{center}
+        \begin{tabular}{| l | l |}
+            \hline
+            \textbf{Rendering} & \textbf{\LaTeX-kod} \\
+            \hline
+            $5+5 \leq 10$ & \$ 5+5 \textbackslash leq 10 \$ \\
+            \hline
+            $2^{4\cdot3 + 1}$ & \$ 2\textasciicircum \{4 \textbackslash cdot 3 + 1\} \$ \\
+            \hline
+            $13 \equiv_5 3$ & \$ 13 \textbackslash equiv\_5 3 \$ \\
+            \hline
+            $\{a,b,c\}$ & \$ \textbackslash\{ a,b,c \textbackslash\} \$ \\
+            \hline
+            $f:\mathbb{Z}_{+} \to \mathbb{R}$ & \$ f: \textbackslash mathbb\{Z\}\_\{+\} \textbackslash to \textbackslash mathbb\{R\} \$ \\
+            \hline
+            $p(x)=x^3+5x^2-8x+2$ & \$ p(x)=x\textasciicircum 3+4x\textasciicircum 2-8x+2 \$ \\
+            \hline
+            $\sin(\pi)+\cos(\pi/2)$ & \$\textbackslash sin(\textbackslash pi)+\textbackslash cos(\textbackslash pi/2)\$ \\
+            \hline
+            $x_{1,2} = -\frac{7}{2} \pm \sqrt{5}$ & \$ x\_\{1,2\} = -\textbackslash frac\{p\}\{2\} \textbackslash pm \textbackslash sqrt\{5\} \$ \\
+            \hline
+        \end{tabular}
+        \caption{\LaTeX-exempel.}
+        \label{t3}
+    \end{center}
+\end{table}
+
+
+
+
+% References
+\newpage
+\bibliography{refs}
+
+
+\end{document}
