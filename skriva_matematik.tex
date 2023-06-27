@@ -8,13 +8,15 @@
 \usepackage{blindtext}
 \usepackage{tcolorbox}
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
 
-% \definecolor{green}{cmyk}{0.37, 0, 0.94, 0.21, 0.20}
+\definecolor{green}{cmyk}{0.37, 0, 0.94, 0.21, 0.20}
 
 \bibliographystyle{plainurl}
 
-\title{Att skriva matematik \\ \normalsize Förberedande Kurs i matematik}
-\author{}
+\title{Att skriva matematik}
+\author{Caroline Roos}
 \date{}
 
 
@@ -40,9 +42,9 @@
 
 \section{Inledning}
 
-På universitet och högskolor är kraven på skriftliga presentationer höga, och det är därmed viktigt att lära sig skriva matematisk text. I detta kompendium ger vi dig tips och råd på hur du skriver matematik på ett snyggt och tydligt sätt.
+På universitet och högskolor är kraven på skriftliga presentationer höga, och det är därmed viktigt att lära sig skriva matematisk text. I detta kompendium ger vi dig tips och råd på hur du skriver matematik på ett snyggt och tydligt sätt. Tanken är att du som student ska kunna använda detta för att skriva både längre och kortare matematiska texter.
 
-Vi lyfter saker som är extra viktiga att tänka på vid skrivandet, och använder exempel för att tydliggöra skillnaden mellan bra och mindre bra matematisk text. För den som tänker fortsätta läsa matematik och är intresserad av att läsa mer om matematiskt skrivande rekommenderas \textit{Mathematical writing} av Franco Vivaldi\cite{vivaldi}, som står för inspirationen bakom flera punkter i denna text.
+Vi lyfter saker som är extra viktiga att tänka på vid skrivandet, och använder exempel för att tydliggöra skillnaden mellan bra och mindre bra matematisk text. För den som tänker fortsätta läsa matematik och är intresserad av att läsa mer om matematiskt skrivande rekommenderas \textit{Mathematical writing} av Franco Vivaldi\cite{vivaldi}, som är inspirationen bakom flera punkter i Avsnitt \ref{ch2} och \ref{ch3}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -50,7 +52,7 @@ Vi lyfter saker som är extra viktiga att tänka på vid skrivandet, och använd
 %%    - Siffor och symboler  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Allmänna skrivtips}
+\section{Allmänna skrivtips}\label{ch2}
 
 Börja alltid med att skissa på en lösning på problemet separat innan du börjar skriva själva texten. När du väl har en lösning kan du börja fundera på hur du bäst kan presentera den i text. Det finns många sätt att lösa ett problem på, och ännu fler sätt att presentera lösningar på. Till en början har vi några enkla tumregler att hålla koll på:
 
@@ -58,9 +60,12 @@ Börja alltid med att skissa på en lösning på problemet separat innan du bör
     \item En text ska vara sammanhängande och bestå av fullständiga meningar.
     \item Formler och matematiska uttryck ska vara del av fullständiga meningar.
     \item Var noga med att börja varje mening med stor bokstav och avsluta med punkt.
+    \item Alla beteckningar som införs ska vara tydligt definierade i texten.
 \end{itemize}
 
-Utöver detta är det såklart viktigt att tänka på stavning och grammatik, precis som när vi skriver vilken annan text som helst.
+Utöver dessa punkter är det såklart viktigt att tänka på stavning och grammatik, precis som när vi skriver vilken annan text som helst.
+
+
 
 %% Siffor och symboler
 
@@ -98,8 +103,6 @@ Något som kan vara svårt i början är att hitta balansen i att kombinera siff
 \end{itemize}
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%
 %%  Notation       %%
 %%    - Aritmetik  %%
@@ -107,9 +110,11 @@ Något som kan vara svårt i början är att hitta balansen i att kombinera siff
 %%    - Olikheter  %%
 %%%%%%%%%%%%%%%%%%%%%
 
-\section{Notation}
+
+\section{Notation}\label{ch3}
 
 Var försiktig och noggrann med matematisk notation. Se till att du förstår innebörden hos olika symboler innan du använder dom, till exempel betyder olika parenteser (( ), [ ], \{ \}) och pilar ($\Rightarrow$, $\Leftrightarrow$, $\to$) olika saker. Fel symbol kan göra att det du skriver inte är matematiskt korrekt, eller att du skriver någonting annat än det du faktiskt menar.
+
 
 
 %% Aritmetik
@@ -140,13 +145,27 @@ Notationen för det öppna intervallet krockar med notationen för ett ordnat pa
 $$]a,b[ \hspace{10mm} [a,b[ \hspace{10mm} ]a,b],$$
 men så länge det framgår tydligt från kontexten att det är ett intervall vi syftar på så fungerar båda notationerna lika bra.
 
-Ibland vill vi uttrycka intervall som sträcker sig oändligt långt, till exempel om vi vill ange värdemängden till funktionen $f(x) = x^2$ som bekant är alla icke-negativa reella tal. Vi kan uttrycka värdemängden med mängdnotation
+Ibland vill vi uttrycka intervall som sträcker sig oändligt långt. Säg att vi vill ange värdemängden till funktionen $f(x) = x^2$. Denna består som bekant av alla icke-negativa reella tal och vi kan uttrycka den med mängdnotation
 $$\{ a \: : \: 0 \leq a < \infty \},$$
 eller med notationen för intervall
 $$[0, \infty[.$$
 
 Notera att vi använt oss av strikt olikhet och öppet intervall här då $\infty$ inte är ett tal och därför inte kan antas av funktionen.
 
+
+
+%% Decimaltal
+
+\subsection{Decimaltal}
+
+I grundskolan lär vi oss att skriva decimaltal med kommatecken (till exempel $1,5$), men detta visar sig dock vara problematiskt då vi använder kommatecknet för att bland annat separera element i mängder. Därför använder vi oss av punkt instället. Låt oss definiera mängden $A$ bestående av tre decimaltal
+$$A = \{0.1,2.3,4.5\}.$$
+
+Hade vi istället använt kommatecken i decimaltal hade samma mängd sett ut så här
+$$A = \{0,1,2,3,4,5\},$$
+men det här är ju mängden som innehåller alla heltal från $0$ till $5$, inte de tre decimaltalen vi definierade mängden med.
+
+I det allra flesta fall är det bäst att hålla sig till att skriva talen på bråkform. På så sätt är talen alltid exakta och lättare att räkna med.
 
 
 
@@ -159,12 +178,15 @@ Notera att vi använt oss av strikt olikhet och öppet intervall här då $\inft
 
 \section{Struktur}
 
-\subsection{Inledning}
+Oavsett om du skriver en uppsats eller en lösning till en inlämningsuppgift så behöver texten vara strukturerad på ett lämpligt sätt. Det ska vara enkelt för läsaren att följa och förstå det du har gjort. 
 
-\subsection{Huvudtext}
+\begin{itemize}[leftmargin=25mm, rightmargin=0mm]
+    \item[\textbf{Inledning:}] Börja med att beskriva problemet som ska lösas och ange vilka metoder som används, samt varför dessa kan användas.
+    \item[\textbf{Huvudtext:}] Här skriver du själva lösningen på problemet. Se till att dina logiska argument är lätta att följa, och motivera alla steg i din lösning. Tänk på tumreglerna från Avsnitt \ref{ch2} och var var noga med notationen.
+    \item[\textbf{Slutsats:}] Avsluta alltid med en slutsats där du sammanfattar vad du kom fram till.
+\end{itemize}
 
-\subsection{Slutsats}
-
+Det kan vara så att en inledning inte alltid är strikt nödvändig, till exempel på en läxa, men det beror på problemet och hur lång och komplex lösningen är. Det är en god vana att ändå alltid ha åtminstone en inledande mening eller två.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,43 +197,43 @@ Notera att vi använt oss av strikt olikhet och öppet intervall här då $\inft
 
 Det finns inget formellt krav på att använda \LaTeX$ $ i kursen, men det är starkt rekommenderat. Att skriva \LaTeX-kod är enkelt, du omger bara det matematiska uttrycket med dollartecken. Till exempel renderas \LaTeX-koden \$1+x=5\$ som $1+x=5$. Om du vill att det matematiska uttrycket ska stå skrivet på en egen rad så omger du det istället med dubbla dollartecken, då får vi att \$\$1+x=5\$\$ renderas som $$1+x=5.$$
 
-Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi vanligtvis använder med \LaTeX-kod, dessa är vanligtvis svåra att uttrycka i ett vanligt ordbehandlingsprogram. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas i \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
+Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi normalt använder med \LaTeX-kod, dessa är vanligtvis svåra att uttrycka i ett vanligt ordbehandlingsprogram. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas i \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
 
-\begin{table}[h]
+\begin{table}
+\begin{minipage}[b]{.5\linewidth}
     \begin{center}
-        \begin{tabular}{| c | l |}
-            \hline 
-            \textbf{Rendering} & \textbf{\LaTeX-kod} \\
-            \hline
-            $\pi$ & \$ \textbackslash pi \$ \\
-            \hline
-            $\sqrt{ x }$ & \$ \textbackslash sqrt\{x\} \$ \\
-            \hline
-            $\equiv$ & \$ \textbackslash equiv \$ \\
-            \hline
-            $\cdot$ & \$ \textbackslash cdot \$ \\
-            \hline
-            $\mathbb{R}$ & \$ \textbackslash mathbb\{R\} \$ \\
-            \hline
-            $\implies$ & \$ \textbackslash implies \$ \\
-            \hline
-            $\pm$ & \$ \textbackslash pm \$ \\
-            \hline
-            $\leq$ & \$ \textbackslash leq \$ \\
-            \hline
-            $\geq$ & \$ \textbackslash geq \$ \\
-            \hline
-            $\neq$ & \$ \textbackslash neq \$ \\
-            \hline
-            $\infty$ & \$ \textbackslash infty \$ \\
-            \hline
-        \end{tabular}
-        \caption{Vanliga symboler i \LaTeX.}
-        \label{t1}
+    \begin{tabular}{| c | l |}
+        \hline 
+        \textbf{Rendering} & \textbf{\LaTeX-kod} \\
+        \hline
+        $\pi$ & \$ \textbackslash pi \$ \\
+        \hline
+        $\sqrt{ x }$ & \$ \textbackslash sqrt\{x\} \$ \\
+        \hline
+        $\equiv$ & \$ \textbackslash equiv \$ \\
+        \hline
+        $\cdot$ & \$ \textbackslash cdot \$ \\
+        \hline
+        $\mathbb{R}$ & \$ \textbackslash mathbb\{R\} \$ \\
+        \hline
+        $\implies$ & \$ \textbackslash implies \$ \\
+        \hline
+        $\pm$ & \$ \textbackslash pm \$ \\
+        \hline
+        $\leq$ & \$ \textbackslash leq \$ \\
+        \hline
+        $\geq$ & \$ \textbackslash geq \$ \\
+        \hline
+        $\neq$ & \$ \textbackslash neq \$ \\
+        \hline
+        $\infty$ & \$ \textbackslash infty \$ \\
+        \hline
+    \end{tabular}
+    \caption{Vanliga symboler i \LaTeX.}
+    \label{t1}
     \end{center}
-\end{table}
-
-\begin{table}[h]
+\end{minipage}
+\begin{minipage}[b]{.5\linewidth}
     \begin{center}
         \begin{tabular}{| l | l |}
             \hline
@@ -235,9 +257,10 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
         \caption{Vanliga uttryck i \LaTeX.}
         \label{t2}
     \end{center}
+\end{minipage}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
     \begin{center}
         \begin{tabular}{| l | l |}
             \hline
@@ -273,147 +296,32 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 \section{Exempel}
 
 
+Det är dags att ta allt vi lärt oss och använda det för att analysera några exempel.
 
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.8\textwidth}{
-%             \textbf{Problem: }Motivera att $(a^m)^n = a^{mn}$.
-%         }
-%     }
-%     \end{center}
-    
-%     \begin{center}
-%         \noindent\fbox{
-%             \parbox{0.8\textwidth}{
-%                 \textbf{Mindre bra lösning:}
-    
-%                 Vi kan motivera detta genom att visa varför (a\textasciicircum 2)\textasciicircum 3=a\textasciicircum 6:
-%                 (a\textasciicircum 2)\textasciicircum 3=(a*a)\textasciicircum 3=(a*a)*(a*a)*(a*a)=a*a*a*a*a*a=a\textasciicircum 6.
-%             }
-%         }
-%     \end{center}
-    
-%     \begin{center}
-%         \noindent\fbox{
-%             \parbox{0.8\textwidth}{
-%                 \textbf{Bättre lösning:}
-    
-%                 Vi kan motivera detta genom att visa varför $(a^2)^3 = a^6$: \newline
-%                 $(a^2)^3 = (a \cdot a)^3= (a \cdot a)\cdot (a \cdot a) \cdot (a \cdot a) = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6$.
-%             }
-%         }
-%     \end{center}
+\subsection*{Exempel 1}
 
-
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.8\textwidth}{
-%             \textbf{Problem: }Faktorisera polynomet $p(x)=x^2-5x+6$.
-%         }
-%     }
-% \end{center}
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.8\textwidth}{
-%             \textbf{Mindre bra lösning:}
-
-%             $x^2-5x+6 = 0 => x=5/2 \pm$ rotenur$1/4$
-
-%             Rötterna är $x_1 = 2$, $x_2 = 3$. Det ger faktoriseringen $(x-2)(x-3)$.
-%         }
-%     }
-% \end{center}
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.8\textwidth}{
-%             \textbf{Bättre lösning:}
-
-%             Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att kvadratkomplettera:
-%             \vspace{2mm}
-
-%             $\quad \: x^2-5x+6 = 0$
-
-%             $\Leftrightarrow x^2-5x = -6$
-
-%             $\Leftrightarrow(x-\frac{5}{2})^2 = \frac{1}{4}$
-%             \vspace{2mm}
-
-%             Nu drar vi roten ur båda led:
-%             \vspace{2mm}
-
-%             $\quad \: x-\frac{5}{2} = \pm \sqrt{\frac{1}{4}}$
-
-%             $\Leftrightarrow x = \frac{5}{2} \pm \frac{1}{2}$
-%             \vspace{2mm}
-
-%             Detta ger oss lösningarna $x_1 = 2$ och $x_2=3$.
-
-%             Enligt faktorsatsen är $(x-a)$ en faktor till polynomet $p(x)$ om och endast om $x = a$ är en rot till $p(x)$. Det följer av satsen, och att ett andragradspolynom inte kan ha fler än två rötter, att $p(x) = (x-2)(x-3)$.
-%         }
-%     }
-% \end{center}
-
-% \begin{center}
-%     \noindent\fbox{
-%         \parbox{0.8\textwidth}{
-
-%         }
-%     }
-% \end{center}
-
-
-
-% \begin{center}
-% \begin{tcolorbox}[width=\linewidth,colback={red!30!white},title={\textbf{Mindre bra lösning}},outer arc=0mm,colupper=black]
-
-% \end{tcolorbox} 
-% \end{center}
-
-
+% Exempel 1
 \begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 1}},outer arc=0mm,colupper=black]
-    Motivera att $(a^m)^n = a^{mn}$.
-\end{tcolorbox} 
-\end{center}
-
-\begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 1: Lösning - Sämre}},outer arc=0mm,colupper=black]
-    Vi kan motivera detta genom att visa varför (a\textasciicircum 2)\textasciicircum 3=a\textasciicircum 6:
-    (a\textasciicircum 2)\textasciicircum 3=(a*a)\textasciicircum 3=(a*a)*(a*a)*(a*a)=a*a*a*a*a*a=a\textasciicircum 6.
-\end{tcolorbox} 
-\end{center}
-
-\begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 1: Lösning - Bättre}},outer arc=0mm,colupper=black]
-    Vi kan motivera detta genom att visa varför $(a^2)^3 = a^6$: \newline
-    $(a^2)^3 = (a \cdot a)^3= (a \cdot a)\cdot (a \cdot a) \cdot (a \cdot a) = a \cdot a \cdot a \cdot a \cdot a \cdot a = a^6$.
-\end{tcolorbox} 
-\end{center}
-
-
-
-
-
-
-
-\begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 2}},outer arc=0mm,colupper=black]
+\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Problem}},outer arc=0mm,colupper=black]
     Faktorisera polynomet $p(x)=x^2-5x+6$.
 \end{tcolorbox} 
 \end{center}
 
+Studera lösningen nedan och fundera först själv på vad problemet med den är och vad vi kan göra för att förbättra den.
+
 \begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 2: Lösning - Sämre}},outer arc=0mm,colupper=black]
+\begin{tcolorbox}[width=\linewidth,colback={red!15!white},title={\textbf{Lösning 1 - Sämre}},outer arc=0mm,colupper=black]
     $x^2-5x+6 = 0 => x=5/2 \pm$ rotenur$1/4$
 
     Rötterna är $x_1 = 2$, $x_2 = 3$. Det ger faktoriseringen $(x-2)(x-3)$.
 \end{tcolorbox} 
 \end{center}
 
+Det finns flera problem med den här lösningen. För det första är den översta raden nästan oläslig, detta skulle vi kunna rätta till genom att använda \LaTeX$\:$och skriva fullständiga meningar istället för enbart siffror och symboler. Något annat som saknas i denna lösning är motiveringar. Det framgår inte vilken metod som använts för att räkna fram rötterna eller varför vi får just denna faktorisering. Jämför nu med följande lösning.
 
 
 \begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 2: Lösning - Bättre}},outer arc=0mm,colupper=black]    
+\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Lösning 2 - Bättre}},outer arc=0mm,colupper=black]    
     Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att kvadratkomplettera:
     \vspace{2mm}
 
@@ -438,32 +346,64 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 \end{tcolorbox} 
 \end{center}
 
+Här inleder vi med att beskriva vad vi ska göra och vi använder \LaTeX$\:$ för att skriva ekvationerna. Notera att vi också ställt upp dem på ett mer lättläst vis. Det framgår också tydligt med hänvisning till faktorsatsen hur vi kommer fram till faktoriseringen.
 
 
 
-
+\subsection*{Exempel 2}
 
 \begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Exempel 3}},outer arc=0mm,colupper=black]
-
+\begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Problem}},outer arc=0mm,colupper=black]
+    Beräkna resten då $2^{333}\cdot5$ delas med $7$.
 \end{tcolorbox} 
 \end{center}
 
-\begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={red!25!white},title={\textbf{Exempel 3: Lösning - Sämre}},outer arc=0mm,colupper=black]
+Ett försök på en lösning skulle kunna se ut som Lösning 1 nedan. Fundera på hur du skulle kunna förbättra denna.
 
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={red!15!white},title={\textbf{Lösning 1 - Sämre}},outer arc=0mm,colupper=black]
+    Vi använder moduloräkning för att hitta resten.
+
+    2\textasciicircum{156}*5 = (2\textasciicircum2)\textasciicircum 78*5 (mod 7) = 4\textasciicircum78*5 (mod 7) = (4\textasciicircum2)\textasciicircum39*5 (mod 7) = 16\textasciicircum39*5 (mod 7) = 2\textasciicircum39*5 (mod 7) = (2\textasciicircum3)\textasciicircum13*5 (mod 7) = 8\textasciicircum13*5 (mod 7) = 1\textasciicircum13*5 (mod 7) = 1*5 (mod 7) = 5(mod 7)
+
+    Svar: resten är 1
 \end{tcolorbox} 
 \end{center}
 
-\begin{center}
-\begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Exempel 3: Lösning - Bättre}},outer arc=0mm,colupper=black]
+Det första du tänkte på var säkert att det var nästintill omöjligt att läsa och hänga med i uträkningen. Vi gör ett nytt försök och skriver uträkningarna i \LaTeX$\:$ istället.
 
+\begin{center}
+\begin{tcolorbox}[width=\linewidth,colback={red!15!white},title={\textbf{Lösning 2 - Något bättre}},outer arc=0mm,colupper=black]
+    Vi använder moduloräkning för att hitta resten.
+
+    $2^{156}\cdot 5 \equiv_7 (2^2)^{78}\cdot 5\equiv_7 4^{78} \cdot 5 \equiv_7 (4^2)^{39} \cdot 5 \equiv_7 16^{39} \cdot 5 \equiv_7 2^{39} \cdot 5 \equiv_7 (2^3)^{13} \cdot 5 \equiv_7 1^{13}\cdot 5 \equiv_7 1 \cdot 5 \equiv_7 5$
+
+    Svar: Resten när $2^{156}$ delas på $7$ är $1$.
 \end{tcolorbox} 
 \end{center}
 
+Nu är det lättare att läsa och följa uträkningen. Det finns dock fortfarande en del problem som behöver åtgärdas. 
+
+Trots att uträkningen nu går att läsa så är den väldigt lång och är fortfarande inte att klassa som lättläst. Dessutom har vi använt symbolen $\equiv_7$ i varje steg, även då det är likhet. Detta är tekniskt sett fortfarande korrekt, men det är tydligare om vi skriver likhet där det faktiskt är likhet.
+
+Mot slutet av räkningarna så framkommer det även att $2^3 \equiv_7 1$, detta bör vi givetvis använda oss av redan från början för att slippa onödigt långa uträkningar.
+
+Sist men inte minst så saknas det en motivation till varför moduloräkning skulle ge oss den sökta resten. 
 
 
+\begin{center}
+    \begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Lösning 3 - Bättre}},outer arc=0mm,colupper=black]
+        Om $a$ och $r$ är kongruenta modulo $b$ och $0\leq r<b$, så lämnar $a$ resten $r$ vid division med $b$. Detta gör det möjligt för oss att använda moduloräkning för att hitta resten. \vspace{2mm}
 
+        Vi noterar att $2^3 \equiv_7 1$ och att $156 = 3\cdot 52$. Då kan vi göra omskrivningen $2^{156}\cdot 5 = (2^3)^{52} \cdot 5$ med hjälp av potenslagarna. Det ger oss
+
+        $$2^{156}\cdot 5 = (2^3)^{52} \cdot 5 \equiv_7 1^{52} \cdot 5 = 5$$
+
+        Eftersom $0\leq 5<7$ så kan vi dra slutsatsen att resten då $2^{156}$ divideras med $7$ är $5$.
+    \end{tcolorbox} 
+    \end{center}
+
+Denna lösning är mycket bättre. Vi har en inledning där vi beskriver hur vi hittar resten och motiverar varför vi kan använda denna metod. Därefter har vi en kort huvudtext där vi löser problemet på ett effektivt sätt och motiverar stegen. Vi avslutar sedan med en kort slutsats.
 
 
 %%%%%%%%%%%%%%%%
@@ -488,10 +428,15 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
     \item Förklara utan att använda några matematiska symboler:
     \begin{enumerate}[label=(\alph*)]
         \item Hur dividerar man två bråk med varandra?
-        \item Hur utför man kvadratkomplettering?
         \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är ett primtal?
         \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är summan av två kvadrater?
     \end{enumerate}
+    \item Förbättra lösningen:
+    \begin{enumerate}[leftmargin=20mm]
+        \item[Problem:] Hitta alla rötter till polynomet $p(x)=x^3 - 4x^2 - 7x + 10$.
+        \item[Lösning:] x=1 är en rot ser vi. polynomdivision ger $x^2-3x-10$ som har rötterna x=-2 och x=5.
+    \end{enumerate}
+    Tips: Tänk på strukturen och motivera stegen.
 \end{enumerate}
 
 
