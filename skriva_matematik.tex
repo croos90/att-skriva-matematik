@@ -16,38 +16,37 @@
 
 \bibliographystyle{plainurl}
 
-\title{Att skriva matematik \\$ $ \\\large Förberedande kurs i matematik}
-\author{Caroline Roos}
-\date{}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-%Titelsida
+
+%% Titelsida
 \begin{titlepage}
 \begin{center}
-    \Huge \textbf{Att skriva Matematik}
+    \Huge Att skriva Matematik
     \vfill
-
-    \includegraphics[width = \linewidth]{Untitled_Artwork.png}
+    \includegraphics[width = \linewidth]{frontv2.png}
     \vfill
     \Large
     Caroline Roos
 \end{center}    
 \end{titlepage}
 
-% TOC
+
+%% TOC
 \tableofcontents
 \thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1}
+
 
 
 %%%%%%%%%%%%%%%%%
 %%  Inledning  %%
 %%%%%%%%%%%%%%%%%
-
-\newpage
-\setcounter{page}{1}
 
 \section{Inledning}
 
@@ -112,12 +111,11 @@ Något som kan vara svårt i början är att hitta balansen i att kombinera siff
 \end{itemize}
 
 
-%%%%%%%%%%%%%%%%%%%%%
-%%  Notation       %%
-%%    - Aritmetik  %%
-%%    - Mängder    %%
-%%    - Olikheter  %%
-%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Notation                     %%
+%%    - Aritmetik                %%
+%%    - Mängder och intervall    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Notation}\label{ch3}
@@ -180,9 +178,6 @@ I de allra flesta fall är det bäst att hålla sig till att skriva talen på br
 
 %%%%%%%%%%%%%%%%%%%%%
 %%  Struktur       %%
-%%    - Inledning  %%
-%%    - Huvudtext  %%
-%%    - Slutsats   %%
 %%%%%%%%%%%%%%%%%%%%%
 
 \section{Struktur}
@@ -196,6 +191,7 @@ Oavsett om du skriver en uppsats eller en lösning till en inlämningsuppgift s�
 \end{itemize}
 
 Det kan vara så att en inledning inte alltid är strikt nödvändig, till exempel på en läxa, men det beror på problemet och hur lång och komplex lösningen är. Det är en god vana att ändå alltid skriva åtminstone en inledande mening eller två.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -298,18 +294,20 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 \end{table}
 
 
+
+
 %%%%%%%%%%%%%%%
 %%  Exempel  %%
 %%%%%%%%%%%%%%%
 
 \section{Exempel}
 
-
 Det är dags att ta allt vi lärt oss och använda det för att analysera några exempel.
+
 
 \subsection*{Exempel 1}
 
-% Exempel 1
+%% Exempel 1
 \begin{center}
 \begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Problem}},outer arc=0mm,colupper=black]
     Faktorisera polynomet $p(x)=x^2-5x+6$.
@@ -327,7 +325,6 @@ Studera lösningen nedan och fundera först själv på vad problemet med den är
 \end{center}
 
 Det finns flera problem med den här lösningen. För det första är den översta raden nästan oläslig, detta skulle vi kunna rätta till genom att använda \LaTeX$\:$ och skriva fullständiga meningar istället för enbart siffror och symboler. Något annat som saknas i denna lösning är motiveringar. Det framgår inte vilken metod som användes för att räkna fram rötterna eller varför vi får just denna faktorisering. Jämför nu med följande lösning.
-
 
 \begin{center}
 \begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Lösning 2 - Bättre}},outer arc=0mm,colupper=black]    
@@ -358,7 +355,7 @@ Det finns flera problem med den här lösningen. För det första är den övers
 Här inleder vi med att beskriva vad vi ska göra och vi använder \LaTeX$\:$ för att skriva ekvationerna. Notera att vi också ställt upp ekvationerna på ett mer lättläst vis. Det framgår också tydligt med hänvisning till faktorsatsen hur vi kommer fram till faktoriseringen.
 
 
-
+%% Exempel 2
 \subsection*{Exempel 2}
 
 \begin{center}
@@ -412,6 +409,7 @@ Sist men inte minst bör vi fundera på om allt i lösningen är tillräckligt m
 Denna lösning är mycket bättre. Vi har en inledning där vi beskriver hur vi hittar resten och motiverar varför vi kan använda denna metod. Därefter har vi en kort huvudtext där vi löser problemet på ett effektivt sätt och motiverar stegen. Vi avslutar sedan med en kort slutsats.
 
 
+
 %%%%%%%%%%%%%%%%
 %%  Övningar  %%
 %%%%%%%%%%%%%%%%
@@ -446,7 +444,9 @@ Denna lösning är mycket bättre. Vi har en inledning där vi beskriver hur vi 
 \end{enumerate}
 
 
-% References
+
+
+%% References
 \newpage
 \bibliography{refs}
 
