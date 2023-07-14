@@ -10,11 +10,10 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{caption}
-\usepackage{graphicx}
-
-\definecolor{green}{cmyk}{0.37, 0, 0.94, 0.21, 0.20}
 
 \bibliographystyle{plainurl}
+
+\definecolor{green}{cmyk}{0.37, 0, 0.94, 0.21, 0.20}
 
 
 
@@ -28,12 +27,15 @@
     \vspace{2mm}
 
     \noindent \Large - En introduktion -
+
     \vfill
 
     \includegraphics[width = \linewidth]{frontv2.png}
     \vfill
-    \Large
+
+    \large
     Caroline Roos
+
 \end{center}    
 \end{titlepage}
 
@@ -114,10 +116,12 @@ Något som kan vara svårt i början är att hitta balansen i att kombinera siff
 \end{itemize}
 
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Notation                     %%
 %%    - Aritmetik                %%
 %%    - Mängder och intervall    %%
+%%    - Decimaltal               %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -135,7 +139,7 @@ Notationen för de aritmetiska operationerna är välbekanta sedan grundskolan. 
 $$xy, \hspace{10mm} x\cdot y, \hspace{10mm} x \times y,$$
 och samma sak när det kommer till deras kvot:
 $$\frac{x}{y}, \hspace{10mm} x/y, \hspace{10mm}  x : y.$$
-Notationen $x:y$ är inte särskilt vanlig, och kan betyda olika saker i olika sammanhang, så vi undviker att använda denna. Det vanligaste är att använda $xy$ eller $x \cdot y$ för multiplikation, samt $\frac{x}{y}$ och $x/y$ för division, därför rekommenderar vi att du också gör det. Använd aldrig punkt '.' eller bokstaven 'x' för att uttrycka en produkt, detta leder direkt till förvirring hos läsaren.
+Notationen $x:y$ är inte särskilt vanlig, och kan betyda olika saker i olika sammanhang, så vi undviker att använda denna. Det vanligaste är att använda $xy$ eller $x \cdot y$ för multiplikation, samt $\frac{x}{y}$ och $x/y$ för division, därför rekommenderar vi att du också gör det. Använd aldrig punkt '.' eller bokstaven 'x' för att uttrycka en produkt, detta leder direkt till förvirring hos läsaren. Om du använder symbolen '/' för division så försäkra dig om att det är tydligt vilket tal du syftar på, ska till exempel $x/yz$ tolkas som $x/y\cdot z$ eller $x/(yz)$?
 
 
 
@@ -185,7 +189,7 @@ I de allra flesta fall är det bäst att hålla sig till att skriva talen på br
 
 \section{Struktur}
 
-Oavsett om du skriver en uppsats eller en lösning till en inlämningsuppgift så behöver texten vara strukturerad på ett lämpligt sätt. Det ska vara enkelt för läsaren att följa och förstå det du har gjort. 
+Oavsett om du skriver en uppsats eller en lösning till en inlämningsuppgift så behöver texten vara strukturerad på ett lämpligt sätt.
 
 \begin{itemize}[leftmargin=25mm, rightmargin=0mm]
     \item[\textbf{Inledning:}] Börja med att beskriva problemet som ska lösas och ange vilka metoder som används, samt varför vi kan tillämpa dessa.
@@ -195,6 +199,8 @@ Oavsett om du skriver en uppsats eller en lösning till en inlämningsuppgift s�
 
 Det kan vara så att en inledning inte alltid är strikt nödvändig, till exempel på en läxa, men det beror på problemet och hur lång och komplex lösningen är. Det är en god vana att ändå alltid skriva åtminstone en inledande mening eller två.
 
+Fundera på vem den tilltänkta läsaren är när du skriver. Du bör sträva efter att en person med likvärdig matematiskt bakgrund som dig, till exempel en medstudent, enkelt ska kunna följa och förstå det du har skrivit även om hen på förväg inte vet hur man löser just det problem som du har löst. En bra matematisk text är en text som, förutom att vara matematiskt korrekt, är tydlig och lättläst.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -203,11 +209,13 @@ Det kan vara så att en inledning inte alltid är strikt nödvändig, till exemp
 
 \section{Typsättning i \LaTeX}
 
-Det finns inget formellt krav på att använda \LaTeX$ $ i kursen, men det är starkt rekommenderat. Att skriva \LaTeX-kod är enkelt, du omger bara det matematiska uttrycket med dollartecken. Till exempel renderas \LaTeX-koden \$1+x=5\$ som $1+x=5$. Om du vill att det matematiska uttrycket ska stå skrivet på en egen rad så omger du det istället med dubbla dollartecken, då får vi att \$\$1+x=5\$\$ renderas som $$1+x=5.$$
+Det är starkt rekommenderat att använda \LaTeX $ $ när du skriver matematik. Att skriva \LaTeX-kod är enkelt, du omger bara det matematiska uttrycket med dollartecken. Till exempel renderas \LaTeX-koden \$1+x=5\$ som $1+x=5$. Om du vill att det matematiska uttrycket ska stå skrivet på en egen rad så omger du det istället med dubbla dollartecken, då får vi att \$\$1+x=5\$\$ renderas som $$1+x=5.$$
 
 Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett snyggt och lättläst vis. Vi kan skriva alla matematiska symboler som vi normalt använder med \LaTeX-kod, dessa är vanligtvis svåra att uttrycka i ett vanligt ordbehandlingsprogram. I Tabell \ref{t1} och \ref{t2} finns exempel på hur vanliga matematiska symboler och uttryck kan skrivas i \LaTeX. Exempel på lite mer komplicerade uttryck och hur dessa skrivs i \LaTeX$ $ återfinns i Tabell \ref{t3}.
 
-\begin{table}
+Det populäraste valet av \LaTeX-redigerare bland studenter är \href{https://www.overleaf.com/}{overleaf}\footnote{https://www.overleaf.com/} som är helt online och väldigt enkelt att sätta igång med. Alternativt kan du ladda ned och installera \LaTeX $ $ lokalt\footnote{https://www.latex-project.org/} på datorn och skriva dina dokument i en vanlig textredigerare eller IDE. Båda alternativen är helt gratis. På \href{https://en.wikibooks.org/wiki/LaTeX}{WikiBooks}\footnote{https://en.wikibooks.org/wiki/LaTeX} finns omfattande dokumentation i ett lättläst format.
+
+\begin{table}[h]
 \begin{minipage}[b]{.5\linewidth}
     \begin{center}
     \begin{tabular}{| c | l |}
@@ -298,7 +306,6 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 
 
 
-
 %%%%%%%%%%%%%%%
 %%  Exempel  %%
 %%%%%%%%%%%%%%%
@@ -308,9 +315,10 @@ Fördelen med att typsätta i \LaTeX$ $ är att vi kan skriva matematik på ett 
 Det är dags att ta allt vi lärt oss och använda det för att analysera några exempel.
 
 
+%% Exempel 1
+
 \subsection*{Exempel 1}
 
-%% Exempel 1
 \begin{center}
 \begin{tcolorbox}[width=\linewidth,colback={white},title={\textbf{Problem}},outer arc=0mm,colupper=black]
     Faktorisera polynomet $p(x)=x^2-5x+6$.
@@ -331,22 +339,22 @@ Det finns flera problem med den här lösningen. För det första är den övers
 
 \begin{center}
 \begin{tcolorbox}[width=\linewidth,colback={green!25!white},title={\textbf{Lösning 2 - Bättre}},outer arc=0mm,colupper=black]    
-    Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att kvadratkomplettera
+    Vi börjar med att sätta $p(x)=0$ och löser ekvationen genom att först kvadratkomplettera:
     \vspace{2mm}
 
     $\quad \: x^2-5x+6 = 0$
 
     $\Leftrightarrow x^2-5x = -6$
 
-    $\Leftrightarrow(x-\frac{5}{2})^2 = \frac{1}{4}$
+    $\Leftrightarrow(x-\frac{5}{2})^2 = \frac{1}{4}$.
     \vspace{2mm}
 
-    Nu drar vi roten ur båda led:
+    Sedan drar vi roten ur båda led:
     \vspace{2mm}
 
     $\quad \: x-\frac{5}{2} = \pm \sqrt{\frac{1}{4}}$
 
-    $\Leftrightarrow x = \frac{5}{2} \pm \frac{1}{2}$
+    $\Leftrightarrow x = \frac{5}{2} \pm \frac{1}{2}$.
     \vspace{2mm}
 
     Detta ger oss lösningarna $x_1 = 2$ och $x_2=3$.
@@ -418,6 +426,7 @@ Denna lösning är mycket bättre. Vi har en inledning där vi beskriver hur vi 
 %%%%%%%%%%%%%%%%
 
 \section{Övningar}
+
 \begin{enumerate}
     \item Skriv om följande meningar så att de följer tumreglerna för hur man skriver matematisk text:
     \begin{enumerate}[label=(\alph*)]
@@ -438,18 +447,17 @@ Denna lösning är mycket bättre. Vi har en inledning där vi beskriver hur vi 
         \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är ett primtal?
         \item Givet ett positivt heltal $x$, hur tar man reda på om $x$ är summan av två kvadrater?
     \end{enumerate}
-    \item Förbättra lösningen:
+    \item Förbättra lösningen (tänk på struktur och motivationer):
     \begin{enumerate}[leftmargin=20mm]
         \item[Problem:] Hitta alla rötter till polynomet $p(x)=x^3 - 4x^2 - 7x + 10$.
         \item[Lösning:] x=1 är en rot ser vi. polynomdivision ger x\textasciicircum2-3x-10 som har rötterna x=-2 och x=5.
     \end{enumerate}
-    Tips: Tänk på strukturen och motivera stegen.
 \end{enumerate}
 
 
 
 
-%% References
+%% Referenser
 \newpage
 \bibliography{refs}
 
